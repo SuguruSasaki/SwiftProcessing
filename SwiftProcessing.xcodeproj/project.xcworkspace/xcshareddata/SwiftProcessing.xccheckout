@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6DCCFC70-00E1-402C-84B2-B48B400E6B65</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>781CDA131C2C7A2B6AEBFACF746D1F1B922FF123</key>
+		<string>github.com:SuguruSasaki/SwiftProcessing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftProcessing.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>781CDA131C2C7A2B6AEBFACF746D1F1B922FF123</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:SuguruSasaki/SwiftProcessing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>781CDA131C2C7A2B6AEBFACF746D1F1B922FF123</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>781CDA131C2C7A2B6AEBFACF746D1F1B922FF123</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftProcessing</string>
+		</dict>
+	</array>
+</dict>
+</plist>

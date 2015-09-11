@@ -14,6 +14,15 @@
 		01974DFE1BA2A71600138441 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01974DFD1BA2A71600138441 /* Images.xcassets */; };
 		01974E011BA2A71600138441 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01974DFF1BA2A71600138441 /* LaunchScreen.xib */; };
 		01974E0D1BA2A71600138441 /* SwiftProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E0C1BA2A71600138441 /* SwiftProcessingTests.swift */; };
+		01974E1B1BA2AA6D00138441 /* EnterFrameBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E1A1BA2AA6D00138441 /* EnterFrameBeacon.swift */; };
+		01974E1D1BA2ACE300138441 /* EnterFrameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E1C1BA2ACE300138441 /* EnterFrameDelegate.swift */; };
+		01974E211BA2B87E00138441 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E201BA2B87E00138441 /* Particle.swift */; };
+		01974E231BA2B8BB00138441 /* DrawRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E221BA2B8BB00138441 /* DrawRect.swift */; };
+		01974E251BA2B8D800138441 /* DrawCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E241BA2B8D800138441 /* DrawCircle.swift */; };
+		01974E281BA2B95300138441 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E271BA2B95300138441 /* Math.swift */; };
+		01974E2B1BA2B9D300138441 /* UiColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E2A1BA2B9D300138441 /* UiColorExtension.swift */; };
+		01974E2E1BA2BAFD00138441 /* CanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E2D1BA2BAFD00138441 /* CanvasApp.swift */; };
+		01974E301BA2BBBE00138441 /* MyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E2F1BA2BBBE00138441 /* MyCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,15 @@
 		01974E061BA2A71600138441 /* SwiftProcessingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProcessingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01974E0B1BA2A71600138441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01974E0C1BA2A71600138441 /* SwiftProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProcessingTests.swift; sourceTree = "<group>"; };
+		01974E1A1BA2AA6D00138441 /* EnterFrameBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterFrameBeacon.swift; sourceTree = "<group>"; };
+		01974E1C1BA2ACE300138441 /* EnterFrameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterFrameDelegate.swift; sourceTree = "<group>"; };
+		01974E201BA2B87E00138441 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		01974E221BA2B8BB00138441 /* DrawRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawRect.swift; sourceTree = "<group>"; };
+		01974E241BA2B8D800138441 /* DrawCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCircle.swift; sourceTree = "<group>"; };
+		01974E271BA2B95300138441 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		01974E2A1BA2B9D300138441 /* UiColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiColorExtension.swift; sourceTree = "<group>"; };
+		01974E2D1BA2BAFD00138441 /* CanvasApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasApp.swift; sourceTree = "<group>"; };
+		01974E2F1BA2BBBE00138441 /* MyCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCanvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +97,10 @@
 		01974DF01BA2A71600138441 /* SwiftProcessing */ = {
 			isa = PBXGroup;
 			children = (
+				01974E161BA2A90100138441 /* quad */,
 				01974DF31BA2A71600138441 /* AppDelegate.swift */,
 				01974DF81BA2A71600138441 /* ViewController.swift */,
+				01974E2F1BA2BBBE00138441 /* MyCanvas.swift */,
 				01974DFA1BA2A71600138441 /* Main.storyboard */,
 				01974DFD1BA2A71600138441 /* Images.xcassets */,
 				01974DFF1BA2A71600138441 /* LaunchScreen.xib */,
@@ -113,6 +133,69 @@
 				01974E0B1BA2A71600138441 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01974E161BA2A90100138441 /* quad */ = {
+			isa = PBXGroup;
+			children = (
+				01974E2C1BA2BAC500138441 /* core */,
+				01974E291BA2B9C100138441 /* extension */,
+				01974E261BA2B94B00138441 /* math */,
+				01974E1F1BA2B86D00138441 /* primitive */,
+				01974E1E1BA2B84600138441 /* graphic */,
+				01974E181BA2AA3C00138441 /* event */,
+			);
+			name = quad;
+			sourceTree = "<group>";
+		};
+		01974E181BA2AA3C00138441 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				01974E1A1BA2AA6D00138441 /* EnterFrameBeacon.swift */,
+				01974E1C1BA2ACE300138441 /* EnterFrameDelegate.swift */,
+			);
+			name = event;
+			sourceTree = "<group>";
+		};
+		01974E1E1BA2B84600138441 /* graphic */ = {
+			isa = PBXGroup;
+			children = (
+				01974E221BA2B8BB00138441 /* DrawRect.swift */,
+				01974E241BA2B8D800138441 /* DrawCircle.swift */,
+			);
+			name = graphic;
+			sourceTree = "<group>";
+		};
+		01974E1F1BA2B86D00138441 /* primitive */ = {
+			isa = PBXGroup;
+			children = (
+				01974E201BA2B87E00138441 /* Particle.swift */,
+			);
+			name = primitive;
+			sourceTree = "<group>";
+		};
+		01974E261BA2B94B00138441 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				01974E271BA2B95300138441 /* Math.swift */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
+		01974E291BA2B9C100138441 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				01974E2A1BA2B9D300138441 /* UiColorExtension.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		01974E2C1BA2BAC500138441 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				01974E2D1BA2BAFD00138441 /* CanvasApp.swift */,
+			);
+			name = core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01974E2E1BA2BAFD00138441 /* CanvasApp.swift in Sources */,
 				01974DF91BA2A71600138441 /* ViewController.swift in Sources */,
+				01974E211BA2B87E00138441 /* Particle.swift in Sources */,
+				01974E301BA2BBBE00138441 /* MyCanvas.swift in Sources */,
+				01974E281BA2B95300138441 /* Math.swift in Sources */,
 				01974DF71BA2A71600138441 /* SwiftProcessing.xcdatamodeld in Sources */,
+				01974E251BA2B8D800138441 /* DrawCircle.swift in Sources */,
+				01974E1B1BA2AA6D00138441 /* EnterFrameBeacon.swift in Sources */,
+				01974E231BA2B8BB00138441 /* DrawRect.swift in Sources */,
+				01974E2B1BA2B9D300138441 /* UiColorExtension.swift in Sources */,
+				01974E1D1BA2ACE300138441 /* EnterFrameDelegate.swift in Sources */,
 				01974DF41BA2A71600138441 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
