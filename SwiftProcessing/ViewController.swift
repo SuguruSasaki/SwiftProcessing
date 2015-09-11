@@ -26,7 +26,7 @@ class ViewController: UIViewController, EnterFrameDelegate{
         self._canvas = MyCanvas(frame: CGRectMake(0, 0, width, height), clearColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0))
         
         self.view.addSubview(self._canvas)
-        self.view.backgroundColor = UIColor.blackColor()
+        
     }
 
     /**
