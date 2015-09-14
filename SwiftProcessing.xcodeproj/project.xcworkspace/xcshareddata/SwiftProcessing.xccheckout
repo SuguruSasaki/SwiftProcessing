@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6DCCFC70-00E1-402C-84B2-B48B400E6B65</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SwiftProcessing</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>781CDA131C2C7A2B6AEBFACF746D1F1B922FF123</key>
 		<string>github.com:SuguruSasaki/SwiftProcessing.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SwiftProcessing.xcodeproj/project.xcworkspace</string>
+	<string>SwiftProcessing.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>781CDA131C2C7A2B6AEBFACF746D1F1B922FF123</key>

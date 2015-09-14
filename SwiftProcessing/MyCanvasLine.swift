@@ -90,28 +90,6 @@ class MyCanvasLine: CanvasApp {
         path.stroke()
     }
     
-    /**
-
-    */
-    func controlPointForPoints(p1:CGPoint, p2:CGPoint) -> CGPoint {
-        var cx: CGFloat = ( p1.x + p2.x ) * 0.5
-        var cy: CGFloat = ( p1.y + p2.y ) * 0.5
-        
-        var controlPoint: CGPoint = CGPoint(x: cx, y: cy)
-        var diffY: CGFloat = abs( p2.y - controlPoint.y )
-
-        if p1.y < p2.y {
-            controlPoint.y += diffY
-        }
-        else if p1.y > p2.y {
-            controlPoint.y -= diffY
-        }
-
-        return controlPoint
-    }
-    
-  
-    
     
     /**
 
