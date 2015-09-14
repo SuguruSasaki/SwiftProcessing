@@ -15,8 +15,8 @@ class MyCanvasLine: CanvasApp {
     // Property
     //-------------------------------------------------------
     private var _particles: [Particle] = []
-    
     private var _target: CGPoint!
+    private var _radian: CGFloat = CGFloat(M_PI)
     
     //-------------------------------------------------------
     // Initialize
@@ -43,7 +43,7 @@ class MyCanvasLine: CanvasApp {
         }
         
         //
-        self._target = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        self._target = CGPoint(x: 0, y: self.frame.midY)
     }
     
     //-------------------------------------------------------
@@ -51,9 +51,12 @@ class MyCanvasLine: CanvasApp {
     //-------------------------------------------------------
     
     /**
-
+    calc some action
     */
     override func update(){
+        
+        //self.oscillation()
+        
         var dx:CGFloat = self._target.x - self._particles[0].position().x
         var dy:CGFloat = self._target.y - self._particles[0].position().y
         
@@ -68,10 +71,11 @@ class MyCanvasLine: CanvasApp {
             self._particles[i].setVelocity(dx * 0.1 + 5, y: dy * 0.05)
             self._particles[i].update()
         }
+        
     }
     
     /**
-
+    Draw canvas
     */
     override func draw(){
         var max = self._particles.count - 1
@@ -82,23 +86,40 @@ class MyCanvasLine: CanvasApp {
             var p3: Particle = self._particles[i + 1] as Particle
             var cx2: CGFloat = (p2.position().x + p3.position().x) / 2
             var cy2: CGFloat = (p2.position().y + p3.position().y) / 2
-            
             path.addQuadCurveToPoint(CGPointMake(cx2, cy2), controlPoint: p2.position())
-            
         }
+        path.addLineToPoint(CGPointMake(self.frame.maxX, self.frame.maxY))
+        path.addLineToPoint(CGPointMake(0, self.frame.maxY))
+        
+        
+        UIColor.rgb(r: 22, g: 130, b: 184, alpha: 1.0).setFill()
         path.lineWidth = 1
         path.stroke()
+        path.fill()
     }
     
     
     /**
-
+    Touch Begin
     */
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         let touch = touches.first as! UITouch
         var pos = touch.locationInView(self) as CGPoint
         self._target = pos
     }
+    
+    /**
+    sin motion
+    */
+    func oscillation(){
+        var py: CGFloat = sin(self._radian) * 30 + self.frame.midY
+        self._target.y = py
+        self._radian += 0.03
+        self._radian = self._radian % CGFloat( M_PI * 2 )
+    }
+    
+    
+    
     
     
 }
