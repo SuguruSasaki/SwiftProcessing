@@ -23,6 +23,7 @@
 		01974E2B1BA2B9D300138441 /* UiColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E2A1BA2B9D300138441 /* UiColorExtension.swift */; };
 		01974E2E1BA2BAFD00138441 /* CanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E2D1BA2BAFD00138441 /* CanvasApp.swift */; };
 		01974E301BA2BBBE00138441 /* MyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E2F1BA2BBBE00138441 /* MyCanvas.swift */; };
+		01974E341BA2CD9A00138441 /* MyCanvasLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01974E331BA2CD9A00138441 /* MyCanvasLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		01974E2A1BA2B9D300138441 /* UiColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiColorExtension.swift; sourceTree = "<group>"; };
 		01974E2D1BA2BAFD00138441 /* CanvasApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasApp.swift; sourceTree = "<group>"; };
 		01974E2F1BA2BBBE00138441 /* MyCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCanvas.swift; sourceTree = "<group>"; };
+		01974E331BA2CD9A00138441 /* MyCanvasLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCanvasLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				01974E161BA2A90100138441 /* quad */,
+				01E1AD2C1BA6570400A1C7E1 /* sample */,
 				01974DF31BA2A71600138441 /* AppDelegate.swift */,
 				01974DF81BA2A71600138441 /* ViewController.swift */,
-				01974E2F1BA2BBBE00138441 /* MyCanvas.swift */,
 				01974DFA1BA2A71600138441 /* Main.storyboard */,
 				01974DFD1BA2A71600138441 /* Images.xcassets */,
 				01974DFF1BA2A71600138441 /* LaunchScreen.xib */,
@@ -196,6 +198,15 @@
 				01974E2D1BA2BAFD00138441 /* CanvasApp.swift */,
 			);
 			name = core;
+			sourceTree = "<group>";
+		};
+		01E1AD2C1BA6570400A1C7E1 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				01974E2F1BA2BBBE00138441 /* MyCanvas.swift */,
+				01974E331BA2CD9A00138441 /* MyCanvasLine.swift */,
+			);
+			name = sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 				01974E231BA2B8BB00138441 /* DrawRect.swift in Sources */,
 				01974E2B1BA2B9D300138441 /* UiColorExtension.swift in Sources */,
 				01974E1D1BA2ACE300138441 /* EnterFrameDelegate.swift in Sources */,
+				01974E341BA2CD9A00138441 /* MyCanvasLine.swift in Sources */,
 				01974DF41BA2A71600138441 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +517,7 @@
 				01974E121BA2A71600138441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01974E131BA2A71600138441 /* Build configuration list for PBXNativeTarget "SwiftProcessingTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				01974E151BA2A71600138441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
