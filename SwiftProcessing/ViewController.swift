@@ -14,6 +14,8 @@ class ViewController: UIViewController, EnterFrameDelegate{
     
     private var _canvas: MyCanvas!
     
+    private var _line: MyCanvasLine!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,9 +25,11 @@ class ViewController: UIViewController, EnterFrameDelegate{
         
         let width: CGFloat = self.view.frame.width
         let height: CGFloat = self.view.frame.height
-        self._canvas = MyCanvas(frame: CGRectMake(0, 0, width, height), clearColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0))
+       // self._canvas = MyCanvas(frame: CGRectMake(0, 0, width, height), clearColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0))
+       // self.view.addSubview(self._canvas)
+        self._line = MyCanvasLine(frame: CGRectMake(0, 0, width, height), clearColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0))
+        self.view.addSubview(self._line)
         
-        self.view.addSubview(self._canvas)
         
     }
 
@@ -33,8 +37,12 @@ class ViewController: UIViewController, EnterFrameDelegate{
 
     */
     func update() {
-        self._canvas.update()
-        self._canvas.setNeedsDisplay()
+      //  self._canvas.update()
+     //   self._canvas.setNeedsDisplay()
+        
+        self._line.update()
+        self._line.setNeedsDisplay()
+        
     }
     
     
